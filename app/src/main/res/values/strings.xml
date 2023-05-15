@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">SoFit</string>
+    <!-- _________________ EXERCISE _________________ -->
+
+    <string name="exercise_series">Serie</string>
+    <string name="exercise_reps">Reps</string>
+    <string name="exercise_weight">Weight</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ MY PROGRESS _________________ -->
+
+    <string name="my_progress_title">My Progress</string>
+
+    <string name="my_progress_tab_weight">My Weight (kg)</string>
+    <string name="my_progress_tab_body_fat">My Body Fat (%)</string>
+    <string name="my_progress_tab_body_muscle_mass">My Muscle Mass (%)</string>
+    <string name="my_progress_tab_body_body_water">My Body Water (%)</string>
+
+    <string name="my_progress_add_data">Add data for today</string>
+
+    <!-- _______________________________________________ -->
+
+
+    <!-- _________________ ADD DATA _________________ -->
+
+    <string name="add_data_title">My Progress</string>
+
+    <string name="TextView_add_data_weight">Weight (kg):</string>
+    <string name="TextView_add_data_muscle">Muscle mass (%):</string>
+    <string name="TextView_add_data_fat">Body fat (%):</string>
+    <string name="TextView_add_data_water">Body water (%):</string>
+
+    <string name="EditText_add_data_weight">90</string>
+    <string name="EditText_add_data_muscle">35</string>
+    <string name="EditText_add_data_fat">20</string>
+    <string name="EditText_add_data_water">40</string>
+    <string name="EditText_add_data_height">180</string>
+    <string name="EditText_add_data_age">20</string>
+    <string name="EditText_add_data_sex">Masculine</string>
+
+    <string name="ImageButton_addImage">Select Image</string>
+    <string name="Button_add_data_confirm">Confirm</string>
+    <string name="Button_add_data_cancel">Cancel</string>
+
+    <string name="Series_add_data">3</string>
+    <string name="Repetitions_add_data">15</string>
+
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ BOTONES COMPARTIDOS _________________ -->
+    <string name="add">add</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+    <string name="add_new_session">add new session</string>
+    <string name="change_photo">change photo</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ PERFIL PRINCIPAL _________________ -->
+    <string name="updateData">Update Data</string>
+    <string name="changeProfilePic">Change Profile Pic</string>
+    <string name="showProgress">Show Progress</string>
+
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ EDITAR PERFIL _________________ -->
+    <string name="age">Age</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (cm)</string>
+    <string name="sex">Sex</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ AÑADIR SESION _________________ -->
+    <string name="addExercise">Add Exercise</string>
+    <string name="title">Title</string>
+
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ INICIO SESION _________________ -->
+    <string name="name">Name:</string>
+    <string name="logIn">Log In</string>
+    <string name="logInHintName">John Doe</string>
+
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ AÑADIR EJERCICIO _________________ -->
+    <string name="repetitions">Repetitions</string>
+    <string name="series">Series</string>
+    <string name="select_predefined">Select Predefined Exercise</string>
+    <string name="whichSession">For which session?</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ SELECCIONAR EJERCICIO PREDEFINIDO _________________ -->
+    <string name="textView_select_predefined_exercise">Choose a predefined exercise: </string>
+    <string name="textView_select_body_part">Choose a body part: </string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ MENU _________________ -->
+    <string name="current_rutine">My Current Routine</string>
+    <string name="profile">My profile</string>
+    <string name="routines">My routines</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ MIS RUTINAS _________________ -->
+    <string name="create">Create Routine</string>
+    <string name="complete">Complete all the data</string>
+    <string name="empty">No routines yet, create one</string>
+
+    <!-- _________________ CREAR RUTINA _________________ -->
+    <string name="create_routine_title">Create your routine!</string>
+    <string name="create_routine_change_pic">Change picture</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ MY CURRENT ROUTINE _________________ -->
+    <string name="current_routine_add_session">Add a session to this routine</string>
+    <!-- _______________________________________________ -->
+
+    <!-- _________________ SESSION  _________________ -->
+    <string name="session_add_exercise_to_session">Add an exercise to this session</string>
+    <!-- _______________________________________________ -->
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.092">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/progress_tabLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="71dp">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/TabItem_progress_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_progress_tab_weight"
+                        tools:layout_editor_absoluteX="-9dp"
+                        tools:layout_editor_absoluteY="16dp" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/TabItem_progress_fat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_progress_tab_body_fat"
+                        tools:layout_editor_absoluteX="143dp"
+                        tools:layout_editor_absoluteY="79dp" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/TabItem_progress_muscle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_progress_tab_body_muscle_mass" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/TabItem_progress_water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_progress_tab_body_body_water" />
+                </com.google.android.material.tabs.TabLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="432dp"
+                    android:layout_weight="1">
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/idGraphView"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/my_progress_add_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/rocknroll_one"
+                    android:text="@string/my_progress_add_data"
+                    android:textSize="@dimen/small_font_size" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView_exercise"
+                    android:layout_width="fill_parent"
+                    android:layout_height="492dp"
+                    android:layout_weight="1"
+                    tools:srcCompat="@drawable/default_exercise" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView_exercise_series"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/exercise_series_item_table_height"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rocknroll_one"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/exercise_series"
+                            android:textColor="@color/purple_700"
+                            android:textSize="@dimen/big_font_size" />
+
+                        <TextView
+                            android:id="@+id/TextView_exercise_reps"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/exercise_series_item_table_height"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rocknroll_one"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/exercise_reps"
+                            android:textColor="@color/purple_700"
+                            android:textSize="@dimen/big_font_size" />
+
+                        <TextView
+                            android:id="@+id/textView_exercise_weight"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/exercise_series_item_table_height"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:fontFamily="@font/rocknroll_one"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/exercise_weight"
+                            android:textColor="@color/purple_700"
+                            android:textSize="@dimen/big_font_size" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/seriesRecycler"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:itemCount="1"
+                                    tools:listitem="@layout/line_exercise_serie" />
+                            </LinearLayout>
+                        </ScrollView>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

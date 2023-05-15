@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="361dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+        android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/height"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Height"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="4"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="number|numberDecimal"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/weight"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="4"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="number|numberDecimal"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/age"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Age"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="4"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="number"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/sex"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical"
+                app:layout_rowWeight="1" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Sex"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="4"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="text"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977">
+
+        <Button
+            android:id="@+id/btn_editprofile_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+            android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+            android:layout_weight="1"
+            android:fontFamily="@font/rocknroll_one"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/btn_editprofile_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rocknroll_one"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

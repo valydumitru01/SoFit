@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_textViewSex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MyProfile">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="238dp"
+                android:layout_height="163dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044"
+                tools:src="@tools:sample/avatars[0]" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.84">
+
+
+                <Button
+                    android:id="@+id/button_actualizar_datos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rocknroll_one"
+                    android:text="@string/updateData"
+                    android:textSize="@dimen/small_font_size"></Button>
+
+                <Button
+                    android:id="@+id/button_fotoPerfil"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rocknroll_one"
+                    android:text="@string/changeProfilePic"
+                    android:textSize="@dimen/small_font_size"></Button>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_verProgreso"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:text="@string/showProgress"
+                android:textSize="@dimen/big_font_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.956" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginTop="216dp"
+                android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/TextView_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sex"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/profile_textView_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/sex"
+                        android:textColor="@color/purple_500"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/TextView_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/age"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/profile_textView_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/age"
+                        android:textColor="@color/purple_500"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView_WeightUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/weight"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/profile_textView_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/weight"
+                        android:textColor="@color/purple_500"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView_HeightUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/height"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/profile_textView_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_edit_text"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rocknroll_one"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/height"
+                        android:textColor="@color/purple_500"
+                        android:textSize="@dimen/big_font_size"
+                        tools:textAlignment="center" />
+
+                </TableRow>
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

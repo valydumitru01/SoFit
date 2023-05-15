@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="margin_for_fill_screen_elements">20dp</dimen>
+    <dimen name="exercise_image_size">250dp</dimen>
+    <dimen name="exercise_series_item_table_height">50dp</dimen>
+    <dimen name="distance_margin_of_button_bottom">20dp</dimen>
+    <dimen name="distance_margin_of_button_top">30dp</dimen>
+    <dimen name="height_edit_text">60dp</dimen>
+    <dimen name="height_recycler_element">50dp</dimen>
+    <dimen name="floating_button_bottom_margin">80dp</dimen>
+
+
+    <dimen name="huge_text">40sp</dimen>
+    <dimen name="very_big_text">34sp</dimen>
+    <dimen name="bigger_font_size">28sp</dimen>
+    <dimen name="big_font_size">24sp</dimen>
+    <dimen name="small_font_size">18sp</dimen>
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_rowWeight="4"
+    tools:context=".MyProgress">
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="92dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/rocknroll_one"
+        android:text="@string/name"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/big_font_size"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNombre"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombre" />
+
+    <TextView
+        android:id="@+id/textNombre2"
+        android:layout_width="372dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rocknroll_one"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Enter your data!"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/very_big_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNombre3" />
+
+    <TextView
+        android:id="@+id/textNombre3"
+        android:layout_width="fill_parent"
+        android:layout_height="121dp"
+        android:fontFamily="@font/faster_one"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="SOFIT"
+        android:textColor="@color/purple_700"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="@font/rocknroll_one"
+        android:hint="@string/logInHintName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="@dimen/big_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+        android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+        android:text="@string/logIn"
+        android:textSize="@dimen/big_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+        android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/height"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Height"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="100"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="number|numberDecimal"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/weight"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="100"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="number|numberDecimal"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/age"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Age"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="100"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="number"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_editSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rocknroll_one"
+                android:gravity="center_vertical"
+                android:text="@string/sex"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/big_font_size"
+                app:layout_gravity="right|center_vertical"
+                app:layout_rowWeight="1" />
+
+            <EditText
+                android:id="@+id/editText_edit_profile_Sex"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_weight="100"
+                android:ems="10"
+                android:fontFamily="@font/rocknroll_one"
+                android:inputType="text"
+                android:minHeight="@dimen/big_font_size"
+                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+        </TableRow>
+    </TableLayout>
+    <!-- the root view must be the DrawerLayout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

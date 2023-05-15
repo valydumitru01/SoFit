@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+
+        <!-- this the navigation view which draws and shows the navigation drawer -->
+        <!-- include the menu created in the menu folder -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Session">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_predefinedExercises"
+                android:layout_width="368dp"
+                android:layout_height="333dp"
+                android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginBottom="@dimen/margin_for_fill_screen_elements"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bodyPart_spinner"
+                app:layout_constraintVertical_bias="0.873"
+                tools:listitem="@layout/line_recycler_exercise" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+                android:fontFamily="@font/rocknroll_one"
+                android:text="@string/textView_select_predefined_exercise"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/bigger_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:text="@string/textView_select_body_part"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/small_font_size"
+                app:layout_constraintBottom_toTopOf="@+id/bodyPart_spinner"
+                app:layout_constraintEnd_toEndOf="@+id/bodyPart_spinner"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/bodyPart_spinner" />
+
+            <Spinner
+                android:id="@+id/bodyPart_spinner"
+                style="@style/AppTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_edit_text"
+                android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:listitem="@layout/spinner_item" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/margin_for_fill_screen_elements"
+                android:layout_marginBottom="10dp"
+                android:background="@color/purple_700"
+                app:layout_constraintBottom_toTopOf="@+id/recycler_predefinedExercises"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bodyPart_spinner"
+                app:layout_constraintVertical_bias="0.527"
+                tools:background="@color/purple_700" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
